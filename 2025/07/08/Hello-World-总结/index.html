@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello World &amp; 总结 | Am1reux's BLOG</title><meta name="author" content="Am1reux"><meta name="copyright" content="Am1reux"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="现在是2025年7月8号0点22分，我坐在西安的出租房，刚刚完成自己博客的搭建，逐字写下这篇hello world，作为新旅程的起点。 其实早在大一我就在学长的建议下开始记录自己的学习过程，也会发在csdn上，会因为有人点赞、有人收藏、有人能通过搜索引擎中搜到而开心。但是后面在不断加深学习的过程中，越来越多的CTF比赛需要线下断网，并且我也越来越觉得自己记录的学习过程只是在拾人牙慧，拼接不同大佬的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World &amp; 总结">
+<meta property="og:url" content="http://example.com/2025/07/08/Hello-World-%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Am1reux&#39;s BLOG">
+<meta property="og:description" content="现在是2025年7月8号0点22分，我坐在西安的出租房，刚刚完成自己博客的搭建，逐字写下这篇hello world，作为新旅程的起点。 其实早在大一我就在学长的建议下开始记录自己的学习过程，也会发在csdn上，会因为有人点赞、有人收藏、有人能通过搜索引擎中搜到而开心。但是后面在不断加深学习的过程中，越来越多的CTF比赛需要线下断网，并且我也越来越觉得自己记录的学习过程只是在拾人牙慧，拼接不同大佬的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/touxiang.jpg">
+<meta property="article:published_time" content="2025-07-07T17:49:52.000Z">
+<meta property="article:modified_time" content="2025-07-07T17:54:39.379Z">
+<meta property="article:author" content="Am1reux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/touxiang.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hello World & 总结",
+  "url": "http://example.com/2025/07/08/Hello-World-%E6%80%BB%E7%BB%93/",
+  "image": "http://example.com/img/touxiang.jpg",
+  "datePublished": "2025-07-07T17:49:52.000Z",
+  "dateModified": "2025-07-07T17:54:39.379Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Am1reux",
+      "url": "http://example.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/07/08/Hello-World-%E6%80%BB%E7%BB%93/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello World & 总结',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/shouye.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/shouye.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Am1reux's BLOG</span></a><a class="nav-page-title" href="/"><span class="site-name">Hello World &amp; 总结</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Hello World &amp; 总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-07T17:49:52.000Z" title="发表于 2025-07-08 01:49:52">2025-07-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-07T17:54:39.379Z" title="更新于 2025-07-08 01:54:39">2025-07-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>现在是2025年7月8号0点22分，我坐在西安的出租房，刚刚完成自己博客的搭建，逐字写下这篇hello world，作为新旅程的起点。</p>
+<p>其实早在大一我就在学长的建议下开始记录自己的学习过程，也会发在csdn上，会因为有人点赞、有人收藏、有人能通过搜索引擎中搜到而开心。但是后面在不断加深学习的过程中，越来越多的CTF比赛需要线下断网，并且我也越来越觉得自己记录的学习过程只是在拾人牙慧，拼接不同大佬的文章。因此我转而开始在本地写文章，单纯作为一些知识点的记录，制造一些没有人会看到的学术垃圾(bushi)。<br>大三下半学期，身边同学都开始考虑保研、考研or出国。听着别人对未来的美好规划，从不焦虑的我也开始焦虑起来。不是说我开始焦虑自己的加权和加分，而是焦虑自己的怠惰。明明可以走的路有那么多条，为什么我始终不愿意去尝试去了解。因为大一的成绩，我的课内加权并不高，靠竞赛加分虽然能够弥补，但是仍然难以达到前列，因此我放弃了保外。因为不愿意脱离舒适区，飘洋过海，再加上近几年家境也有点受房价影响，我又放弃了出国。明明我很想去浙大，明明我很向往出国学长的人生，可我始终没有勇气去迈出这一步，仍是封闭在CTF中用沉淀的借口说服自己。我开始讨厌这样的自己，我想做出改变。</p>
+<p>五月，我开始投简历，走出舒适区去争取一份实习。因为觉得简历投的太晚，我只投了三家最想去的，腾讯、字节、华为（事实证明我真的错的离谱）。首先是腾讯在20几号捞了我，但是面试我的是大模型安全的(我简历里根本没提到大模型。。)，完全被拷打会不了一点，因此也没获得什么面经。然后是字节的flow WEB安全，专业对口，但是因为缺乏面经，完全没准备会问什么问题，问到深处就感觉大脑宕机，算法题出了很简单的也是过了，但是最后还是喜提一面被挂。此时我已经一度感觉人生黑暗，一直到6月，华子像一束光照向我。由于有之前字节的面经，面试发挥自我感觉不错。7号1面过，12号主管面过，随后在23号收到保温电话，确定base地，7月3号拿到offer。</p>
+<p>至此实习有了，七月四号询问了辅导员，确定自己的成绩保本校也稳了，虽然有遗憾，但一切都还不错不是么。</p>
+<p>6月23号，学校组织全国教育护网攻击队，我再一次参与其中。如果说去年的教育护网我属于小忙不用帮，大忙帮不上，全程雾里看花，只是对网络安全更加敬畏(如果换你看着学长随便翻别人电脑文件、聊天记录、浏览器记录，我想你也会敬畏的)，那么这次应该算是真正参与其中，参与了每个环节，对于真实环境下的安全有了深刻认识。在这里很感谢学长们。</p>
+<p>首先是丁大师，真的是我偶像级别的，我对他的崇拜有珠穆朗玛峰那么高(bushi)。虽然丁大师去实习了，只能远程参会看我们直播，但不妨碍他带领我们乱杀内网。他像行走的大模型，仿佛什么都懂，好像他的存在本身就是对我浅薄的知识面的嘲讽（bushi）。当然这里纯指我自己菜，丁大师人超级好，会照顾我的茫然给我解释，和丁大师的每次组队，我都收益颇丰，切实拓展了知识面。如果能一直抱丁大师的大腿给我一个亿我也愿意啊呜呜呜。</p>
+<p>然后是徐学长和程学长，加上我组成这次护网的黑奴三人组。为了避开hvv的蓝队，连续几天通宵打到天亮。但是完全没有人埋怨辛苦，大家都是乐在其中，会因为免杀过了、横向到了新的服务器、爆破出数据库密码、cve打通等等而兴奋。匮乏的文字很难表达那种情感，我只觉得那一刻自己的生命如此鲜活、自由，我想大家应该也是如此。我是如此喜欢那样的氛围，以致护网结束时，在松了一口气的同时也感觉心里空落落的，下一次就是一年后了。</p>
+<p>虽然护网开始有点坎坷(倒了大霉)，但也上演了绝地翻盘，从3号的300分到7号的3w分，从未觉得自己的努力如此有意义过。如今大三生涯接近尾声，我也踏上了新的起点，过往种种不可追，那么就在今后的人生中，重新上演一次大翻盘！</p>
+<pre><code>                                                              2025年7月8日
+</code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Am1reux</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/07/08/Hello-World-%E6%80%BB%E7%BB%93/">http://example.com/2025/07/08/Hello-World-%E6%80%BB%E7%BB%93/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">Am1reux's BLOG</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/touxiang.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Am1reux</div><div class="author-info-description">人间总有一两风，填我十万八千梦</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/08/Hello-World-%E6%80%BB%E7%BB%93/" title="Hello World &amp; 总结">Hello World &amp; 总结</a><time datetime="2025-07-07T17:49:52.000Z" title="发表于 2025-07-08 01:49:52">2025-07-08</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/shouye.png);"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By Am1reux</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
